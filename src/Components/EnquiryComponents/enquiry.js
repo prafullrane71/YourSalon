@@ -16,7 +16,7 @@ function Enquiry(){
     </div>
   <div className='enquiry-part-2'>
   <div className='inside-form'>
-    <div className='form-heading'><p style={{textAlign:"center"}}>Have a Question ? <strong>Ask Away !</strong></p><br/></div>
+    <div className='form-heading'><p style={{textAlign:"center"}}>Have aA Question ? <strong>Ask Away !</strong></p><br/></div>
     <div className='contact-demo-1'>
     <div className='info-1'> 
       <input className='first-name' type="text" placeholder=" First Name" required="required"/>
