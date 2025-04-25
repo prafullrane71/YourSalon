@@ -1,0 +1,398 @@
+.enquiry-main {
+  display: flex;
+  background: linear-gradient(to left, rgb(163, 252, 167), #1dbbef);
+  width: 100%;
+  
+}
+.form-heading{
+  display: block;
+  margin-top: -30px;
+  margin-bottom: -70px;
+  font-size: 1.9vw;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.enquiry-part-1{
+  color: aliceblue;
+  margin-top: 140px;
+  margin-left:100px;
+  font-size:"2.8vw";
+  font-family: Georgia, Times New Roman, Times, serif;
+}
+.enquiry-part-2{
+  /* width: 60%; */
+  background-color: aliceblue;
+  border: 1px solid #fffdfd;
+  border-radius:10px;
+  box-shadow: 0 0 9px #ddd;
+  display: inline-block;
+  padding-left: 60px;
+  padding-right: 40px;
+  padding-top: 20px;
+  padding-bottom: 25px;
+  position: relative;
+  margin:80px;
+  margin-top: 60px;
+}
+.inside-form{
+  line-height: 3rem;
+}
+.first-name, .phone-no{
+  border: 1px solid grey;
+  border-radius:8px;
+  height:39px;
+  width: 88%;
+  margin-left: 0%;
+}
+.last-name, .buss-name{
+  border: 1px solid grey;
+  border-radius:8px;
+  height:39px;
+  width: 88%;
+  margin-left: 2%;
+}
+.buss-email, .buss-type{
+  height:39px;
+  width:340px;
+  border-radius:8px;
+  border: 1px solid grey;  
+}
+.date, .time{
+  height:42px;
+  width:160px;
+  padding-left: 1%;
+  margin-top: 2%;
+  border-radius:8px;
+  border: 1px solid grey;
+  background-color: rgb(255, 255, 255);
+}
+.query{
+  height:42px;
+  width:340px;
+  margin-top: 2%;
+  border-radius:8px;
+  border: 1px solid grey;
+  background-color: #fffdfd;
+}
+.contact-demo-1{
+  display: flex;
+}
+.contact-demo-2{
+  display: flex;
+  gap: 0.9rem;
+}
+.submit-button {
+  font-size: large;
+  border-color:#00b6ed;
+  border-radius: 6px;
+  background-color: #00b6ed;
+  width: 320px;
+  height: 38px;
+  }
+  .submit-button:hover {
+    color: aliceblue;
+  }
+  .font-content{
+    font-family: Lato, sans-serif;
+    font-size: 1rem;
+  }
+  .location{
+    width: 100%;
+  }
+  .location-part-1{
+    width: 70%;
+  }
+  .location-part-2{
+    width: 50%;
+  }
+.location-box{
+  background: linear-gradient(to right, rgb(240, 240, 240),rgb(249, 251, 251));
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 0 9px #ddd;
+  margin-left: 100px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-right: 100px;
+  padding: 10px;
+  display: flex;
+}
+.location:hover{
+  /* transition: padding .3s ease, box-shadow .3s ease;
+  padding: 10px; */
+}
+.location-part-2 img{
+  height: 300px;
+  width: 350px;
+}
+.side-line {
+  border-left: 3px solid #d5d5d5;
+  padding: 5px 0 3px 22px;
+  margin-top: 120px;
+  margin-bottom: 100px;
+  margin-left: 50px;
+  font-size: 1.3vw;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+.Call-button{
+  font-size: large;
+  border-color:#6d0808;
+  border-radius: 6px;
+  color: white;
+  background-color: #f54040;
+  width: 350px;
+  height: 38px;
+  margin-top: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  align-items: center;
+}
+.Call-button:hover{
+  color: rgb(214, 254, 203);
+}
+
+@media (max-width:1024px) {
+  .enquiry-resp, .enquiry-main, .location-box{
+  display: flex;
+  width: 92%;
+  height: 100%;
+  flex-direction: column;
+  } 
+  .enquiry-part-1{
+    width: 68%;
+    font-size:2.5vw;
+    font-family: Georgia, Times New Roman, Times, serif;
+  }
+  .enquiry-part-2{
+    width: 58%;
+  }
+  .form-heading{
+    font-size: xx-large;
+  }
+  .first-name, .phone-no{
+    border: 1px solid grey;
+    border-radius:8px;
+    height:39px;
+    width: 90%;
+  }
+  .last-name, .buss-name{
+    border: 1px solid grey;
+    border-radius:8px;
+    height:39px;
+    width: 90%;
+  }
+  .buss-email, .buss-type{
+    height:39px;
+    width:480px;
+    border-radius:8px;
+    border: 1px solid grey;  
+  }
+  .date, .time{
+    height:45px;
+    width:230px;
+    padding-left: 1%;
+    margin-top: 1%;
+    border-radius:8px;
+    border: 1px solid grey;
+    background-color: rgb(255, 255, 255);
+  }
+  .query{
+    height:39px;
+    width:485px;
+    margin-top: 1%;
+    border-radius:8px;
+    border: 1px solid grey;
+    background-color: #fffdfd;
+  }
+  .submit-button{
+    font-size: large;
+    border-color:#00b6ed;
+    border-radius: 6px;
+    background-color: #00b6ed;
+    width: 420px;
+    height: 40px;
+    margin: 10px 0px 0px 50px;
+  }
+  .location{
+    width: 60%;
+    margin-left: 0%;
+  }
+  .location-part-1{
+    margin-top: -10%;
+  }
+  .location-part-2{
+    margin: -5% 0 5% 15%;
+  }
+}
+@media (max-width:768px) {
+  .enquiry-resp, .enquiry-main, .location-box{
+  display: flex;
+  width: 90%;
+  height: 100%;
+  flex-direction: column;
+  } 
+  .enquiry-part-1{
+    width: 68%;
+    margin-left: 15%;
+    font-size:2.5vw;
+    font-family: Georgia, Times New Roman, Times, serif;
+  }
+  .enquiry-part-2{
+    width: 55%;
+    margin-left: 10%;
+  }
+  .form-heading{
+    font-size: xx-large;
+  }
+  .first-name, .phone-no{
+    border: 1px solid grey;
+    border-radius:8px;
+    height:39px;
+    width: 90%;
+  }
+  .last-name, .buss-name{
+    border: 1px solid grey;
+    border-radius:8px;
+    height:39px;
+    width: 90%;
+  }
+  .buss-email, .buss-type{
+    height:39px;
+    width:328px;
+    border-radius:8px;
+    border: 1px solid grey;  
+  }
+  .date, .time{
+    height:45px;
+    width:154px;
+    padding-left: 1%;
+    margin-top: 2%;
+    border-radius:8px;
+    border: 1px solid grey;
+    background-color: rgb(255, 255, 255);
+  }
+  .query{
+    height:39px;
+    width:329px;
+    margin-top: 2%;
+    border-radius:8px;
+    border: 1px solid grey;
+    background-color: #fffdfd;
+  }
+  .submit-button{
+    font-size: large;
+    border-color:#00b6ed;
+    border-radius: 6px;
+    background-color: #00b6ed;
+    width: 280px;
+    height: 40px;
+    margin: 10px 0px 0px 20px;
+  }
+  .location{
+    width: 70%;
+    margin-left: -6%;
+  }
+  .location-part-1{
+    margin-top: -20%;
+  }
+  .location-part-2{
+    width: 80%;
+    line-height: 200%;
+    margin: -10% 0 5% 5%;
+  }
+  .location-img{
+    width: 5%;
+    height: 100px;
+  }
+  .Call-button{
+    margin-left: 5%;
+  }
+}
+@media (max-width:576px) {
+  .enquiry-resp, .enquiry-main, .location-box{
+  display: flex;
+  width: 98%;
+  height: 100%;
+  flex-direction: column;
+  } 
+  .enquiry-part-1{
+    width: 68%;
+    margin-left: 15%;
+    margin-top: 15%;
+    font-size:2.5vw;
+    font-family: Georgia, Times New Roman, Times, serif;
+  }
+  .form-heading{
+    font-size: xx-large;
+  }
+  .enquiry-part-2{
+    width: 65%;
+    margin-left: 10%;
+    padding-left: 6%;
+  }
+  .first-name, .phone-no{
+    border: 1px solid grey;
+    border-radius:8px;
+    height:39px;
+    width: 88%;
+    margin-left: 0%;
+  }
+  .last-name, .buss-name{
+    border: 1px solid grey;
+    border-radius:8px;
+    height:39px;
+    width: 88%;
+    margin-left: 2%;
+  }
+  .buss-email, .buss-type{
+    height:39px;
+    width:340px;
+    border-radius:8px;
+    border: 1px solid grey;  
+  }
+  .date, .time{
+    height:42px;
+    width:160px;
+    padding-left: 1%;
+    margin-top: 2%;
+    border-radius:8px;
+    border: 1px solid grey;
+    background-color: rgb(255, 255, 255);
+  }
+  .query{
+    height:42px;
+    width:340px;
+    margin-top: 2%;
+    border-radius:8px;
+    border: 1px solid grey;
+    background-color: #fffdfd;
+  }
+  .submit-button{
+    font-size: large;
+    border-color:#00b6ed;
+    border-radius: 6px;
+    background-color: #00b6ed;
+    width: 250px;
+    height: 40px;
+    margin: 10px 0px 0px 35px;
+  }
+  .location{
+    width: 70%;
+    margin-left: -6%;
+  }
+  .location-part-1{
+    width: 550px;
+    margin-top: -20%;
+  }
+  .location-part-2{
+    width: 80%;
+    line-height: 200%;
+    margin: -10% 0 5% 5%;
+  }
+  .location-img{
+    width: 5%;
+    height: 100px;
+  }
+  .Call-button{
+    margin-left: 5%;
+  }
+}

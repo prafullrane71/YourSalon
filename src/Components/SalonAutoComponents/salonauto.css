@@ -1,0 +1,495 @@
+.salonauto-header{
+    margin-top: 20px;
+    gap: 13rem;
+    text-align: center;
+    display: flex;
+    background-color: rgb(243, 249, 254);
+    border: 1px solid #242527;
+    border-radius: 8px;
+    box-shadow: 0 0 9px #ddd;
+    width: 800px;
+    height: 50px;
+    margin-left: 200px;
+  }
+  .salonauto-heading {
+    margin-top: -18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  .salonauto-back-icon{
+    margin: 3px 5px 3px 5px;
+    padding: 2px;
+    background-color: rgb(252, 201, 181);
+    border: 1px solid #030303;
+    border-radius: 8px;
+    box-shadow: 0 0 9px #ddd;
+    font-size: xx-large;
+    cursor: pointer;
+  }
+  
+
+.salonauto-main {
+    display: flex;
+    gap: 10rem;
+}
+.salonauto-container-1 {
+    align-items: center;
+}
+.salonauto-img-1 img{
+    width: 350px;
+    height: 280px;
+    padding-top: 45px;
+    margin-left: 150px;
+    margin-bottom: 20px;
+}
+.salonauto-descrp-1 {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 9px #ddd;
+    padding: 15px;
+    text-align: center;
+    width: 350px;
+    margin-left: 130px;
+}
+.salonauto-container-2 {
+    /* padding-top: -100px; */
+}
+.salonauto-img-2 img {
+    width: 350px;
+    height: 280px;
+    margin: 35px 0px 20px 90px;
+}
+.salonauto-descrp-2 {
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 9px #ddd;
+    padding: 15px;
+    width: 350px;
+    margin-left: 90px;
+}
+.salonauto-second-main {
+    display:flex;
+    padding-bottom: 30px;
+    gap: 14rem;
+}
+.salonauto-container-3 {
+    align-items: center;
+}
+.salonauto-img-3 img{
+    width: 310px;
+    height: 240px;
+    padding-top: 45px;
+    margin-left: 150px;
+    margin-bottom: 30px;
+}
+.salonauto-descrp-3 {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 9px #ddd;
+    padding: 15px;
+    text-align: center;
+    width: 350px;
+    margin-left: 130px;
+}
+.salonauto-container-4 {
+    align-items: center;
+}
+.salonauto-img-4 img{
+    width: 350px;
+    height: 280px;
+    margin: 10px 0px 30px 40px;
+}
+.salonauto-descrp-4 {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 9px #ddd;
+    padding: 15px;
+    text-align: center;
+    width: 350px;
+}
+
+@media (max-width:1024px) {
+    .salonauto-main, .salonauto-second-main{
+        display: flex;
+        /* width: 100%;
+        height: 100%; */
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .salonauto-header{
+        text-align: center;
+        height: 100%;
+        gap: 13rem;
+        margin-left: 10%;
+        padding-top: 5px;
+    }
+    .salonauto-img-1{
+        margin-left: -18%;
+        margin-bottom: 40px;
+    }
+    .salonauto-descrp-1{
+        margin-left:20px;
+        margin-bottom: -120px;
+    }
+    .salonauto-img-2{
+        margin-left: -15%;
+        margin-bottom: 40px;
+    }
+    .salonauto-descrp-2{
+        margin-left: 3%;
+        margin-bottom: 20px;
+    }
+    .salonauto-img-3{
+        margin-left: -20%;
+        margin-bottom: 40px;
+    }
+    .salonauto-descrp-3{
+        margin-left: 20px;
+        margin-bottom: -190px;
+    }
+    .salonauto-img-4{
+        margin-left: -45px;
+        margin-bottom: 20px;
+    }
+    .salonauto-descrp-4{
+        margin-left: -22px;
+        margin-bottom: 40px;
+    }
+}
+@media (max-width:768px) {
+    .salonauto-main, .salonauto-second-main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .salonauto-header{
+        text-align: center;
+        height: 100%;
+        width: 85%;
+        gap: 8rem;
+        margin-left: 7%;
+        padding-top: 5px;
+    }
+    .salonauto-img-1{
+        margin-left: -18%;
+        margin-bottom: 40px;
+    }
+    .salonauto-descrp-1{
+        margin-left:45px;
+        margin-bottom: -120px;
+    }
+    .salonauto-img-2{
+        margin-left: -12%;
+        margin-bottom: 40px;
+    }
+    .salonauto-descrp-2{
+        margin-left: 5%;
+        margin-bottom: 20px;
+    }
+    .salonauto-img-3{
+        margin-left: -17%;
+        margin-bottom: 40px;
+    }
+    .salonauto-descrp-3{
+        margin-left: 40px;
+        margin-bottom: 40px;
+    }
+    .salonauto-img-4{
+        margin-left: -3%;
+        margin-bottom: 20px;
+    }
+    .salonauto-descrp-4{
+        margin-left: 25px;
+        margin-bottom: 40px;
+    }
+}
+@media (max-width:576px) {
+    .salonauto-main, .salonauto-second-main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .salonauto-header{
+        text-align: center;
+        height: 100%;
+        width: 90%;
+        gap: 4.5rem;
+        margin-left: 5%;
+        padding-top: 5px;
+    }
+    .salonauto-img-1{
+        margin-left: -18%;
+        margin-bottom: 40px;
+    }
+    .salonauto-descrp-1{
+        margin-left:55px;
+        margin-bottom: -120px;
+    }
+    .salonauto-img-2{
+        margin-left: -10%;
+        margin-bottom: 40px;
+    }
+    .salonauto-descrp-2{
+        margin-left: 8%;
+        margin-bottom: 20px;
+    }
+    .salonauto-img-3{
+        margin-left: -17%;
+        margin-bottom: 40px;
+    }
+    .salonauto-descrp-3{
+        margin-left: 45px;
+        margin-bottom: 40px;
+    }
+    .salonauto-img-4{
+        margin-left: -3%;
+        margin-bottom: 20px;
+    }
+    .salonauto-descrp-4{
+        margin-left: 20px;
+        margin-bottom: 40px;
+    }
+}
+@media (max-width:480px) {
+    .salonauto-main, .salonauto-second-main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .salonauto-header{
+        text-align: center;
+        height: 100%;
+        width: 93%;
+        gap: 3rem;
+        margin-left: 5%;
+        padding-top: 5px;
+    }
+    .salonauto-img-1{
+        margin-left: -15%;
+        margin-bottom: 40px;
+    }
+    .salonauto-descrp-1{
+        margin-left:60px;
+        margin-bottom: -120px;
+    }
+    .salonauto-img-2{
+        margin-left: -10%;
+        margin-bottom: 40px;
+    }
+    .salonauto-descrp-2{
+        margin-left: 8%;
+        margin-bottom: 20px;
+    }
+    .salonauto-img-3{
+        margin-left: -17%;
+        margin-bottom: 40px;
+    }
+    .salonauto-descrp-3{
+        margin-left: 45px;
+        margin-bottom: 40px;
+    }
+    .salonauto-img-4{
+        margin-left: -3%;
+        margin-bottom: 20px;
+    }
+    .salonauto-descrp-4{
+        margin-left: 20px;
+        margin-bottom: 40px;
+    }
+}
+@media (max-width:450px) {
+    .salonauto-main, .salonauto-second-main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .salonauto-header{
+        text-align: center;
+        height: 100%;
+        width: 94%;
+        gap: 2rem;
+        margin-left: 5%;
+        padding-top: 5px;
+    }
+    .salonauto-img-1{
+        margin-left: -12%;
+        margin-bottom: 40px;
+    }
+    .salonauto-descrp-1{
+        margin-left:70px;
+        margin-bottom: -120px;
+    }
+    .salonauto-img-2{
+        margin-left: -10%;
+        margin-bottom: 40px;
+    }
+    .salonauto-descrp-2{
+        margin-left: 10%;
+        margin-bottom: 20px;
+    }
+    .salonauto-img-3{
+        margin-left: -15%;
+        margin-bottom: 40px;
+    }
+    .salonauto-descrp-3{
+        margin-left: 55px;
+        margin-bottom: 40px;
+    }
+    .salonauto-img-4{
+        margin-left: -1%;
+        margin-bottom: 20px;
+    }
+    .salonauto-descrp-4{
+        margin-left: 25px;
+        margin-bottom: 40px;
+    }
+}
+@media (max-width:400px) {
+    .salonauto-main, .salonauto-second-main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .salonauto-header{
+        text-align: center;
+        height: 100%;
+        width: 100%;
+        gap: 1rem;
+        margin-left: 5%;
+        padding-top: 5px;
+    }
+    .salonauto-img-1{
+        margin-left: -10%;
+        margin-bottom: 40px;
+    }
+    .salonauto-descrp-1{
+        margin-left:90px;
+        margin-bottom: -120px;
+    }
+    .salonauto-img-2{
+        margin-left: -6%;
+        margin-bottom: 40px;
+    }
+    .salonauto-descrp-2{
+        margin-left: 12%;
+        margin-bottom: 20px;
+    }
+    .salonauto-img-3{
+        margin-left: -15%;
+        margin-bottom: 40px;
+    }
+    .salonauto-descrp-3{
+        margin-left: 65px;
+        margin-bottom: 40px;
+    }
+    .salonauto-img-4{
+        margin-left: 2%;
+        margin-bottom: 20px;
+    }
+    .salonauto-descrp-4{
+        margin-left: 35px;
+        margin-bottom: 40px;
+    }
+}
+@media (max-width:360px) {
+    .salonauto-main, .salonauto-second-main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .salonauto-header{
+        text-align: center;
+        height: 100%;
+        width: 110%;
+        gap: 1rem;
+        margin-left: 5%;
+        padding-top: 5px;
+    }
+    .salonauto-img-1{
+        margin-left: -10%;
+        margin-bottom: 40px;
+    }
+    .salonauto-descrp-1{
+        margin-left:90px;
+        margin-bottom: -120px;
+    }
+    .salonauto-img-2{
+        margin-left: -6%;
+        margin-bottom: 40px;
+    }
+    .salonauto-descrp-2{
+        margin-left: 14%;
+        margin-bottom: 20px;
+    }
+    .salonauto-img-3{
+        margin-left: -12%;
+        margin-bottom: 40px;
+    }
+    .salonauto-descrp-3{
+        margin-left: 75px;
+        margin-bottom: 40px;
+    }
+    .salonauto-img-4{
+        margin-left: 4%;
+        margin-bottom: 20px;
+    }
+    .salonauto-descrp-4{
+        margin-left: 55px;
+        margin-bottom: 40px;
+    }
+}
+@media (max-width:360px) {
+    .salonauto-main, .salonauto-second-main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .salonauto-header{
+        text-align: center;
+        height: 100%;
+        width: 125%;
+        gap: 1rem;
+        margin-left: 3%;
+        padding-top: 5px;
+    }
+    .salonauto-img-1{
+        margin-left: -5%;
+        margin-bottom: 40px;
+    }
+    .salonauto-descrp-1{
+        margin-left:110px;
+        margin-bottom: -120px;
+    }
+    .salonauto-img-2{
+        margin-left: -1%;
+        margin-bottom: 40px;
+    }
+    .salonauto-descrp-2{
+        margin-left: 18%;
+        margin-bottom: 20px;
+    }
+    .salonauto-img-3{
+        margin-left: -8%;
+        margin-bottom: 40px;
+    }
+    .salonauto-descrp-3{
+        margin-left: 95px;
+        margin-bottom: 40px;
+    }
+    .salonauto-img-4{
+        margin-left: 15%;
+        margin-bottom: 20px;
+    }
+    .salonauto-descrp-4{
+        margin-left: 95px;
+        margin-bottom: 40px;
+    }
+}

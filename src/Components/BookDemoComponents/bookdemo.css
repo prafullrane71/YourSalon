@@ -1,0 +1,109 @@
+.demo-page{
+    display: flex;
+    width: 100%;
+    gap: 2.5rem;
+}
+.lets-connenct{
+    width: 100%;
+    margin-left: 10px;
+    margin-top: -22px;
+}
+.demo-img img {
+    width: 20%;
+    padding-top: 30px;
+    margin-left: 5px;
+    justify-content: center;
+  }
+.demoform-main{
+    display: flex;
+    gap: 3rem;
+    margin-left: 10px;
+}
+.demoform-1{
+    line-height: 50px;
+}
+.demoform-2{
+    line-height: 50px;
+}
+.our-brands{
+    padding-left: 15px;
+    margin-top: -22px;
+    color: azure;
+    background-color: cornflowerblue;
+    width: 100%;
+}
+.demo-logo{
+    /* line-height: 1.3; */
+    margin-left: 10px;
+}
+.demo-title{
+    font-size: 2.5vw;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.brands{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.signup-button{
+    height: 44px;
+    width: 80%;
+    margin-left: 35px;
+    color: aliceblue;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    background: #15023a;
+    border-color: #15023a;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: 700;
+    font-size: 3.5vh;
+    font-family: "Arial", serif;
+    align-items: center;
+}
+.already-acc{
+    margin-left: 175px;
+    font-size: 1.3vw;
+    font-weight: 600;
+    align-items: center;
+}
+.brands-imgs-part1{
+    display: flex;
+    margin-top: 40px;
+}
+.brand-img-1 img{
+    height: 90px;
+    width: 150px;
+    padding: 5px;
+}
+.brand-img-2 img{
+    height: 90px;
+    width: 150px;
+    padding: 5px;
+}
+.brand-img-3 img{
+    background-color: black;
+    margin-top: 5px;
+    height: 80px;
+    width: 150px;
+    padding: 5px;
+}
+.brands-imgs-part2{
+    display: flex;
+}
+.brand-img-33 img{
+    height: 90px;
+    width: 155px;
+    padding: 5px;
+}
+.copyright{
+    margin-top: 20px;
+    font-size: 1vw;
+    font-style: normal;
+}
+
+@media (max-width:776px) {
+    .demo-page, .lets-connenct{
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    }
+}

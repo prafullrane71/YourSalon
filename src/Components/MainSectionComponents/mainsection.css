@@ -1,0 +1,980 @@
+.hero-section-container {
+    width: 100%;
+    height: 95vh;
+    margin: auto;
+    position: relative;
+    /* top: -2.6rem; */
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin-top: -43px;
+  }
+  
+  .banner {
+    width: 100%;
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+    height: 100%;
+    background-image: url('../../Assets/images/Background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0rem;
+    padding: 1rem;
+    overflow: hidden;
+  }
+  
+  .hero-section-img {
+    width: 35%;
+    /* margin: -254px; */
+    /* width: 35%; */
+    height: 100%;
+    position: relative;
+    /* float: left; */
+    bottom: 0rem;
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: slideInLeft 1s forwards 0.5s;
+  }
+  
+  .hero-section-img img {
+    width: 180%;
+    height: 90%;
+    background-color: none;
+    object-fit: cover;
+  }
+  
+  .heroSection-content {
+    flex: 1;
+  }
+  
+  .hero-section-title {
+    /* width: 35rem;
+    opacity: 0;
+    transform: translateX(100%);
+    animation: slideInRight 1s forwards 0.5s; */
+    /* width: 58rem; */
+    width: 60rem;
+    opacity: 0;
+    transform: translateX(100%);
+    animation: slideInRight 1s forwards 0.5s;
+  }
+  
+  @font-face {
+    /* font-family: 'Sagite';
+    src: url('../../Assets/Fonts/sagite-demo-version.regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal; */
+  }
+  
+  .hero-section-title h1 {
+    color: #202428;
+    font-family: serif;
+    font-size: 3.5rem;
+    margin-top: 220px;
+    font-weight: 600;
+    line-height: 1.375rem;
+    margin-bottom: 1rem;
+    margin-left: -120px;
+    padding: 0rem;
+    text-align: center;
+    text-shadow: 2px 2px 5px #0000004d;
+  }
+  
+  .hero-section-title h3 {
+    font-size: 2.5rem;
+    /* font-weight: 400; */
+    margin-left: 90px;
+    font-family: 'Inter', sans-serif;
+    line-height: 3.075rem;
+    color: #202428;
+    padding: 0.5rem;
+  }
+  
+  .hero-section-title h5 {
+    /* font-size: 1.5rem;
+    line-height: 2.375rem;
+    color: #202428;
+    padding: 0.5rem; */
+    font-size: 1.5rem;
+    margin-top: -60px;
+    margin-bottom: 190px;
+    margin-left: 90px;
+    font-weight: bolder;
+    line-height: 2rem;
+    color: #202428;
+    padding: 0.5rem;
+  }
+  
+  .ft-bold {
+    font-family: Poppins, sans-serif;
+    font-size: xx-small;
+    font-weight: 600 !important;
+  }
+  
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+  
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInRight {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+  
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .dashboard-blocks {
+    /* position: relative;
+    top: 8rem;
+    left: 30rem; */
+    position: relative;
+    top: 4rem;
+    left: 18rem;
+  }
+  
+  .dashboard-blocks img {
+    width: 80px;
+    height: 70px;
+    border-radius: 16px;
+  }
+  
+  .dashboardTwo-block {
+    position: relative;
+    top: 32rem;
+    right: 1rem;
+    background: transparent; /* Ensure the background is transparent */
+  }
+  
+  .dashboardTwo-block img {
+    width: 80px;
+    height: 70px;
+    border-radius: 16px;
+  }
+  
+  .orange-block,
+  .blue-block,
+  .purple-block,
+  .yellow-block {
+    position: absolute;
+    animation: slideInLeft 2s forwards, bounceUp 2s ease-in-out infinite;
+  }
+  
+  .orange-block {
+    animation: slideInLeft 2s forwards, bounceUp 2s ease-in-out infinite;
+  }
+  
+  .blue-block {
+    top: 2rem;
+    left: 4rem;
+    animation: slideInLeft 2s forwards, bounceDown 2s ease-in-out infinite;
+  }
+  
+  .purple-block {
+    right: 6rem;
+    bottom: 3rem;
+    animation: slideInRight 2s forwards, bounceUp 2s ease-in-out infinite;
+  }
+  
+  .yellow-block {
+    right: 3rem;
+    bottom: 1rem;
+    animation: slideInRight 2s forwards, bounceDown 2s ease-in-out infinite;
+  }
+  
+  @keyframes bounceUp {
+  
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+  
+    50% {
+      transform: translateY(-30px);
+    }
+  }
+  
+  @keyframes bounceDown {
+  
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+  
+    50% {
+      transform: translateY(30px);
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    .hero-section-container {
+      width: 100%;
+      height: 100vh;
+    }
+  
+    .banner {
+      width: 1020px;
+      height: 100vh;
+      flex-direction: column;
+      gap: 1rem;
+    }
+  
+    .hero-section-img {
+      width: 50%;
+    }
+  
+    .hero-section-img img {
+      width: 100%;
+    }
+  
+    .hero-section-title {
+      width: 80%;
+      margin: auto;
+    }
+  
+    .heroSection-content {
+      flex: 1;
+    }
+  
+    .dashboard-blocks {
+      top: 2.5rem;
+      left: 0rem;
+    }
+  
+    .dashboardTwo-block {
+      left: 3rem;
+      top: 88rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .hero-section-container {
+      width: 100%;
+      height: 110vh;
+    }
+  
+    .banner {
+      width: 800px;
+      height: 100vh;
+      flex-direction: column;
+      gap: 1rem;
+    }
+  
+    .hero-section-img {
+      width: 40%;
+    }
+  
+    .heroSection-content {
+      /* width: 60%; */
+      width: 80%;
+      /* margin-top: 6rem; */
+      margin-top: 10rem;
+    }
+  
+    .hero-section-title {
+      width: 100%;
+      margin: auto;
+    }
+  
+    .hero-section-title h1 {
+      font-size: 2.5rem;
+    }
+  
+    .hero-section-title h3 {
+      font-size: 1.8rem;
+    }
+  
+    .hero-section-title h5 {
+      font-size: 1.5rem;
+    }
+  
+    .dashboard-blocks {
+      top: 3rem;
+      left: 2rem;
+    }
+  
+    .dashboard-blocks img {
+      width: 100px;
+      height: 80px;
+      background: transparent;
+    }
+  
+    .dashboardTwo-block {
+      position: relative;
+      top: 30rem;
+      right: 3rem;
+    }
+  
+    .dashboardTwo-block img {
+      width: 100px;
+      height: 80px;
+      border-radius: 16px;
+    }
+  
+    .orange-block,
+    .blue-block,
+    .purple-block,
+    .yellow-block {
+      position: absolute;
+      animation: slideInLeft 2s forwards, bounceUp 2s ease-in-out infinite;
+    }
+  
+    .orange-block {
+      left: 0;
+      animation: slideInLeft 2s forwards, bounceUp 2s ease-in-out infinite;
+    }
+  
+    .blue-block {
+      top: 2rem;
+      left: 4rem;
+      animation: slideInLeft 2s forwards, bounceDown 2s ease-in-out infinite;
+    }
+  
+    .purple-block {
+      right: 3rem;
+      bottom: 6rem;
+      animation: slideInRight 2s forwards, bounceUp 2s ease-in-out infinite;
+    }
+  
+    .yellow-block {
+      right: 0rem;
+      bottom: 2rem;
+      animation: slideInRight 2s forwards, bounceDown 2s ease-in-out infinite;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    /* .hero-section-container {
+      width: 130%;
+      height: 100vh;
+    } */
+  
+    .hero-section-container {
+      width: 100%;
+      height: 100vh;
+      margin-top: -2.1rem;
+    }
+  
+    .hero-section-title {
+      width: 90%;
+      margin: auto;
+      animation: slideInRight 0.5s forwards 0.5s;
+      margin-top: -14rem;
+    }
+  
+    /* .banner {
+      width: 750px;
+      padding: 0.5rem;
+    } */
+    .banner {
+      width: 100%;
+      padding: 0.5rem;
+    }
+  
+    .hero-section-img {
+      width: 80%;
+      animation: slideInLeft 0.5s forwards 0.5s;
+    }
+  
+    /* .hero-section-title h1 {
+      font-size: 2rem;
+    } */
+  
+    .hero-section-title h1 {
+      font-size: 4rem;
+    }
+  
+    .hero-section-title h3 {
+      font-size: 1.5rem;
+    }
+  
+    .hero-section-title h5 {
+      font-size: 1.3rem;
+    }
+  
+    /* .dashboard-blocks {
+      left: 2rem;
+      top: 1rem;
+    } */
+  
+    .dashboard-blocks {
+      left: 4rem;
+      top: 4rem;
+    }
+  
+    /* .dashboardTwo-block {
+      right: 10rem;
+      top: 20rem;
+    } */
+  
+    .dashboardTwo-block {
+      left: -3rem;
+      top: 44rem;
+    }
+  
+    .dashboard-blocks img,
+    .dashboardTwo-block img {
+      width: 80px;
+      height: 60px;
+    }
+  
+    .orange-block {
+      left: -2rem;
+      animation: slideInLeft 2s forwards, bounceUp 2s ease-in-out infinite;
+    }
+  
+    .blue-block {
+      top: 3rem;
+      left: 0;
+      animation: slideInLeft 2s forwards, bounceDown 2s ease-in-out infinite;
+    }
+  
+    .purple-block {
+      right: 1rem;
+      bottom: 4rem;
+      animation: slideInRight 2s forwards, bounceUp 2s ease-in-out infinite;
+    }
+  
+    .yellow-block {
+      right: -1rem;
+      bottom: 1rem;
+      animation: slideInRight 2s forwards, bounceDown 2s ease-in-out infinite;
+    }
+  
+    .hero-section-img {
+      width: 50%;
+      animation: slideInLeft 0.5s forwards 0.5s;
+    }
+  
+    .hero-section-container {
+      width: 100%;
+      height: 100vh;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero-section-container {
+      /* width: 115%; */
+      /* width: 130%; */
+      width: 600px;
+      /* height: 80vh; */
+      height: 100vh;
+      overflow-x: hidden;
+    }
+  
+  
+    .banner {
+      /* width: 100%; */
+      width: 600px;
+      /* height: 70vh; */
+      height: 100vh;
+      flex-direction: column;
+      gap: 1rem;
+      padding: 0.5rem;
+    }
+  
+    .hero-section-img {
+      bottom: 0;
+      animation: slideInLeft 1s forwards 0.5s;
+      width: 30%;
+      height: 30%;
+    }
+  
+    .hero-section-img img {
+      width: 100%;
+      height: 300px;
+    }
+  
+    .hero-section-title {
+      width: 90%;
+      animation: slideInRight 1s forwards 0.5s;
+    }
+  
+    .hero-section-title h1 {
+      font-size: 2rem;
+      padding: 0.5rem;
+    }
+  
+    .hero-section-title h3 {
+      font-size: 1.5rem;
+      padding: 0.5rem;
+    }
+  
+    .hero-section-title h5 {
+      /* font-size: 1rem; */
+      font-size: 1.1rem;
+      padding: 0.5rem;
+    }
+  
+    .dashboard-blocks {
+      top: 1rem;
+      left: 4rem;
+    }
+  
+    .dashboardTwo-block {
+      top: 18rem;
+      left: -3rem;
+    }
+  
+    .dashboard-blocks img,
+    .dashboardTwo-block img {
+      width: 80px;
+      height: 60px;
+    }
+  
+    .orange-block {
+      left: -2rem;
+      animation: slideInLeft 2s forwards, bounceUp 2s ease-in-out infinite;
+    }
+  
+    .blue-block {
+      top: 3rem;
+      left: 1rem;
+      animation: slideInLeft 2s forwards, bounceDown 2s ease-in-out infinite;
+    }
+  
+    .purple-block {
+      right: 2rem;
+      bottom: 4rem;
+      animation: slideInRight 2s forwards, bounceUp 2s ease-in-out infinite;
+    }
+  
+    .yellow-block {
+      right: -1rem;
+      bottom: 1rem;
+      animation: slideInRight 2s forwards, bounceDown 2s ease-in-out infinite;
+    }
+  }
+  
+  @media (max-width: 450px) {
+  
+    .hero-section-container {
+      width: 45rem;
+      /* height: 80vh; */
+      height: 100vh;
+      overflow-x: hidden;
+      /* margin-top: -3rem; */
+      margin-top: -2rem;
+    }
+  
+    .heroSection-content {
+      /* width: 60%; */
+      width: 80%;
+      /* margin-top: 6rem; */
+      margin-top: 23rem;
+    }
+  
+  
+    .banner {
+      /* width: 100%; */
+      width: 45rem;
+      /* height: 70vh; */
+      height: 100vh;
+      flex-direction: column;
+      gap: 1rem;
+      padding: 0.5rem;
+    }
+  
+    .hero-section-img img {
+      width: 100%;
+      height: 300px;
+    }
+  
+    .hero-section-title {
+      width: 90%;
+      animation: slideInRight 1s forwards 0.5s;
+    }
+  
+    .hero-section-title h5 {
+      /* font-size: 1rem; */
+      font-size: 1.1rem;
+      padding: 0.5rem;
+    }
+  
+    .dashboard-blocks {
+      top: 4rem;
+      left: 4rem;
+    }
+  
+    .dashboardTwo-block {
+      top: 28rem;
+      left: -5rem;
+    }
+  
+    .dashboard-blocks img,
+    .dashboardTwo-block img {
+      width: 80px;
+      height: 60px;
+    }
+  
+    .orange-block {
+      left: -2rem;
+      animation: slideInLeft 2s forwards, bounceUp 2s ease-in-out infinite;
+    }
+  
+    .blue-block {
+      top: 3rem;
+      left: 1rem;
+      animation: slideInLeft 2s forwards, bounceDown 2s ease-in-out infinite;
+    }
+  
+    .purple-block {
+      right: 2rem;
+      bottom: 4rem;
+      animation: slideInRight 2s forwards, bounceUp 2s ease-in-out infinite;
+    }
+  
+    .yellow-block {
+      right: -1rem;
+      bottom: 1rem;
+      animation: slideInRight 2s forwards, bounceDown 2s ease-in-out infinite;
+    }
+  
+    .hero-section-img {
+      bottom: 0;
+      animation: slideInLeft 1s forwards 0.5s;
+      width: 56%;
+      height: 30%;
+    }
+  
+    .hero-section-title h1 {
+      margin-top: 5rem;
+      font-size: 4rem;
+      padding: 0.5rem;
+    }
+  
+    .hero-section-title h3 {
+      font-size: 1.8rem;
+      padding: 0.5rem;
+      line-height: 3rem;
+    }
+  
+  }
+  
+  /* 400px */
+  @media (max-width: 400px) {
+  
+    .hero-section-container {
+      /* width: 540px; */
+      width: 40rem;
+      /* height: 80vh; */
+      height: 80vh;
+      overflow-x: hidden;
+      margin-top: -2rem;
+    }
+  
+  
+    .banner {
+      /* width: 100%; */
+      /* width: 550px; */
+      width: 40rem;
+      /* height: 70vh; */
+      height: 100vh;
+      flex-direction: column;
+      gap: 1rem;
+      padding: 0.5rem;
+    }
+  
+    .hero-section-img img {
+      width: 100%;
+      height: 250px;
+    }
+  
+    .hero-section-title {
+      width: 90%;
+      animation: slideInRight 1s forwards 0.5s;
+    }
+  
+    .hero-section-title h1 {
+      /* font-size: 2rem; */
+      font-size: 4rem;
+      margin-top: 5rem;
+      margin-bottom: 1rem;
+    }
+  
+    .hero-section-title h5 {
+      /* font-size: 1rem; */
+      font-size: 1.2rem;
+      padding: 0.5rem;
+    }
+  
+    .dashboard-blocks {
+      top: 4rem;
+      left: 4rem;
+    }
+  
+    .dashboardTwo-block {
+      top: 28rem;
+      left: -3rem;
+    }
+  
+    .dashboard-blocks img,
+    .dashboardTwo-block img {
+      width: 60px;
+      height: 40px;
+    }
+  
+    .orange-block {
+      left: -2rem;
+      animation: slideInLeft 2s forwards, bounceUp 2s ease-in-out infinite;
+    }
+  
+    .blue-block {
+      top: 3rem;
+      left: 1rem;
+      animation: slideInLeft 2s forwards, bounceDown 2s ease-in-out infinite;
+    }
+  
+    .purple-block {
+      right: 2rem;
+      bottom: 4rem;
+      animation: slideInRight 2s forwards, bounceUp 2s ease-in-out infinite;
+    }
+  
+    .yellow-block {
+      right: -1rem;
+      bottom: 1rem;
+      animation: slideInRight 2s forwards, bounceDown 2s ease-in-out infinite;
+    }
+  
+    .heroSection-content {
+      /* width: 60%; */
+      width: 80%;
+      /* margin-top: 6rem; */
+      margin-top: 18rem;
+    }
+  
+    .hero-section-title h3 {
+      /* font-size: 1.2rem; */
+      font-size: 1.6rem;
+      padding: 0.5rem;
+      line-height: 3rem;
+    }
+  
+    .hero-section-img {
+      bottom: 0;
+      animation: slideInLeft 1s forwards 0.5s;
+      width: 55%;
+      height: 30%;
+    }
+  }
+  
+  /* 350px */
+  @media (max-width: 350px) {
+  
+    .banner {
+      /* width: 100%; */
+      /* width: 550px; */
+      width: 35rem;
+      /* height: 70vh; */
+      height: 100vh;
+      flex-direction: column;
+      gap: 1rem;
+      padding: 0.5rem;
+    }
+  
+    .hero-section-img {
+      bottom: 0;
+      animation: slideInLeft 1s forwards 0.5s;
+      width: 70%;
+      height: 20%;
+    }
+  
+    .hero-section-img img {
+      width: 100%;
+      height: 280px;
+    }
+  
+    .hero-section-title {
+      width: 90%;
+      animation: slideInRight 1s forwards 0.5s;
+    }
+  
+    .hero-section-title h1 {
+      font-size: 4rem;
+      padding: 0.8rem;
+      margin-top: 14.5rem;
+      margin-bottom: 0.7rem;
+    }
+  
+    .hero-section-title h3 {
+      font-size: 2rem;
+      padding: 0.3rem;
+      line-height: 3rem;
+    }
+  
+    .hero-section-title h5 {
+      font-size: 1.2rem;
+      padding: 0.5rem;
+    }
+  
+    .dashboard-blocks {
+      top: 3rem;
+      left: 2rem;
+    }
+  
+    .dashboardTwo-block {
+      top: 28rem;
+      left: -2rem;
+    }
+  
+    .dashboard-blocks img,
+    .dashboardTwo-block img {
+      /* width: 80px;
+      height: 60px; */
+      width: 60px;
+      height: 40px;
+    }
+  
+    .orange-block {
+      left: -2rem;
+      animation: slideInLeft 2s forwards, bounceUp 2s ease-in-out infinite;
+    }
+  
+    .blue-block {
+      top: 3rem;
+      left: 1rem;
+      animation: slideInLeft 2s forwards, bounceDown 2s ease-in-out infinite;
+    }
+  
+    .purple-block {
+      right: 2rem;
+      bottom: 4rem;
+      animation: slideInRight 2s forwards, bounceUp 2s ease-in-out infinite;
+    }
+  
+    .yellow-block {
+      right: -1rem;
+      bottom: 1rem;
+      animation: slideInRight 2s forwards, bounceDown 2s ease-in-out infinite;
+    }
+  
+    .hero-section-container {
+      /* width: 550px; */
+      width: 35rem;
+      height: 100vh;
+      margin-top: -2rem;
+    }
+  
+    .demo-btn {
+      width: 80%;
+      font-size: 1.4rem;
+      text-align: center;
+      margin-top: -1.9rem;
+    }
+  }
+  
+  @media (max-width: 300px) {
+  
+    .hero-section-title h1 {
+      margin-top: 22rem;
+      font-size: 4rem;
+      padding: 0.8rem;
+      margin-left: -2rem;
+    }
+  
+    .hero-section-container {
+      /* width: 550px; */
+      width: 32rem;
+      height: 100vh;
+      margin-top: -2rem;
+      /* overflow-x: hidden; */
+    }
+  
+    .banner {
+      /* width: 100%; */
+      /* width: 550px; */
+      width: 30rem;
+      /* height: 70vh; */
+      height: 100vh;
+      flex-direction: column;
+      gap: 1rem;
+      padding: 0.5rem;
+    }
+  
+    .hero-section-img {
+      bottom: 0;
+      animation: slideInLeft 1s forwards 0.5s;
+      width: 80%;
+      height: 25%;
+    }
+  
+    .hero-section-img img {
+      width: 100%;
+      height: 280px;
+    }
+  
+    .hero-section-title {
+      width: 90%;
+      animation: slideInRight 1s forwards 0.5s;
+    }
+  
+  
+    .hero-section-title h3 {
+      font-size: 1.8rem;
+      padding: 0.3rem;
+      margin-top: 0rem;
+      line-height: 3rem;
+    }
+  
+    .hero-section-title h5 {
+      font-size: 1.2rem;
+      padding: 0.5rem;
+    }
+  
+    .dashboard-blocks {
+      top: 3rem;
+      left: 2rem;
+    }
+  
+    .dashboardTwo-block {
+      top: 28rem;
+      left: -4rem;
+    }
+  
+    .dashboard-blocks img,
+    .dashboardTwo-block img {
+      width: 50px;
+      height: 40px;
+    }
+  
+    .orange-block {
+      left: -2rem;
+      animation: slideInLeft 2s forwards, bounceUp 2s ease-in-out infinite;
+    }
+  
+    .blue-block {
+      top: 3rem;
+      left: 1rem;
+      animation: slideInLeft 2s forwards, bounceDown 2s ease-in-out infinite;
+    }
+  
+    .purple-block {
+      right: 2rem;
+      bottom: 4rem;
+      animation: slideInRight 2s forwards, bounceUp 2s ease-in-out infinite;
+    }
+  
+    .yellow-block {
+      right: -1rem;
+      bottom: 1rem;
+      animation: slideInRight 2s forwards, bounceDown 2s ease-in-out infinite;
+    }
+  
+    .heroSection-content {
+      width: 80%;
+      margin-top: 6rem;
+    }
+  }
